@@ -15,7 +15,6 @@ body {
 .header-block {
     max-width: 1200px;
     margin: auto;
-    border: 1px solid red;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -25,8 +24,7 @@ body {
     font-size: 14px;
     line-height: 22px;
     padding: 5px 30px 5px 12px;
-    widows: 100%;
-    min-width: 336px;
+    width: 336px;
     background: #FFFFFF;
     border: 1px solid #D9D9D9;
     box-sizing: border-box;
@@ -36,7 +34,12 @@ body {
     background-position: right 10px center;
 }
 
-.user {
+.user,
+.navigation,
+.navigation-panel,
+.navigation-link,
+.icons-panel,
+.icon-link {
     display: flex;
     align-items: center;
 }
@@ -45,9 +48,51 @@ body {
     padding-right: 8px;
 }
 
-.user-name {
+.user-name,
+.navigation-link {
     font-weight: 600;
     font-size: 14px;
     line-height: 22px;
     color: #FFFFFF;
+}
+
+.navigation-link {
+    text-decoration: none;
+    margin-left: 12px;
+}
+
+.navigation-link::before,
+.icons-panel::before {
+    content: '';
+    width: 1px;
+    height: 16px;
+    background: #003A8C;
+    margin-right: 12px;
+}
+
+.navigation-panel {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.icon-link {
+    margin-right: 12px;
+}
+
+.header-icon {
+    fill: #002766;
+}
+
+.header-icon:hover {
+    fill: white;
+}
+
+.icon-link:last-child::before {
+    content: '';
+
+    align-items: center;
+    width: 1px;
+    height: 16px;
+    background: #003A8C;
+    margin-right: 12px;
 }
