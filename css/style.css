@@ -4,6 +4,7 @@
 
 body {
     font-family: sans-serif;
+    background: #F5F5F5;
 }
 
 .header {
@@ -39,7 +40,8 @@ body {
 .navigation-panel,
 .navigation-link,
 .icons-panel,
-.icon-link {
+.icon-link,
+.nav-link {
     display: flex;
     align-items: center;
 }
@@ -89,7 +91,6 @@ body {
 
 .icon-link:last-child::before {
     content: '';
-
     align-items: center;
     width: 1px;
     height: 16px;
