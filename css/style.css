@@ -35,23 +35,16 @@ body {
     background-position: right 10px center;
 }
 
-.user,
-.navigation,
-.navigation-panel,
-.navigation-link,
-.icons-panel,
-.icon-link,
-.nav-link {
+.user, .navigation, .navigation-panel, .navigation-link, .icons-panel, .icon-link, .nav-link {
     display: flex;
     align-items: center;
 }
 
 .user-avatar {
-    padding-right: 8px;
+    margin-right: 8px;
 }
 
-.user-name,
-.navigation-link {
+.user-name, .navigation-link {
     font-weight: 600;
     font-size: 14px;
     line-height: 22px;
@@ -63,8 +56,7 @@ body {
     margin-left: 12px;
 }
 
-.navigation-link::before,
-.icons-panel::before {
+.navigation-link::before, .icons-panel::before {
     content: '';
     width: 1px;
     height: 16px;
@@ -96,4 +88,70 @@ body {
     height: 16px;
     background: #003A8C;
     margin-right: 12px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.menu-sidebar {
+    max-width: 192px;
+    margin-top: 16px;
+}
+
+.menu-sidebar .user-avatar {
+    width: 24px;
+    height: 24px;
+}
+
+.menu-sidebar .user-name {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #262626;
+}
+
+.nav-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+
+.nav-icon {
+    fill: #1890FF;
+    margin-right: 8px;
+}
+
+.nav-icon-dropdown {
+    fill: #BFBFBF;
+    margin-right: 8px;
+}
+
+.nav-link {
+    padding: 4px 8px;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #595959;
+    border-radius: 4px;
+}
+
+.nav-link .nav-text-dropdown {
+    color: #1890FF;
+}
+
+.nav-link.active {
+    font-weight: 600;
+    color: #262626;
+    background: #FFFFFF;
+}
+
+.nav-title {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    color: #262626;
 }
