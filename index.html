@@ -146,7 +146,8 @@
                 </div>
                 <div class="create-post-body">
                     <img src="img/avatar.png" alt="avatar" class="user-avatar">
-                    <div class="create-post-input" contenteditable="true" placeholder="What`s on your mind, Alex?"></div>
+                    <div class="create-post-input" contenteditable="true" placeholder="What`s on your mind, Alex?">
+                    </div>
                 </div>
                 <div class="create-post-footer">
                     <button class="tag">
@@ -168,26 +169,42 @@
                         <span class="nav-text">Feeling/Activity</span>
                     </button>
                     <button class="tag">
-                        <svg class="nav-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <svg class="nav-icon-ellipsis" width="24" height="24" viewBox="0 0 24 24" fill="#595959">
                             <use xlink:href="img/icons.svg#ellipsis"></use>
                         </svg>
                     </button>
                 </div>
             </div>
             <!-- /.create-post -->
-            <div class="post"></div>
-            <!-- /.post -->
-            <div class="post-header"></div>
-            <!-- /.post-header -->
-            <div class="post-content"></div>
-            <!-- /.post-content -->
-            <div class="likes"></div>
-            <!-- /.likes -->
-            <div class="post-footer"></div>
-            <!-- /.post-footer -->
+            <div class="post">
+                <!-- /.post -->
+                <div class="post-header">
+                    <div class="post-header-user">
+                        <img src="img/avatar.png" alt="avatar" class="user-avatar">
+                        <div class="info">
+                            <span class="user-name">Alex Serhov</span>
+                            <span class="time">3 hrs</span>
+                            <svg class="nav-icon" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                <use xlink:href="img/icons.svg#setting"></use>
+                            </svg>                            
+                        </div>
+                    </div>
+                    <svg class="nav-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <use xlink:href="img/icons.svg#ellipsis"></use>
+                    </svg>
+                </div>
+                <!-- /.post-header -->
+                <div class="post-content"></div>
+                <!-- /.post-content -->
+                <div class="likes"></div>
+                <!-- /.likes -->
+                <div class="post-footer"></div>
+                <!-- /.post-footer -->
+            </div>
         </div>
         <!-- /.main-feed -->
     </div>
+    <script>document.querySelector('.create-post-input').innerHTML = '';</script>
 </body>
 
 </html>
