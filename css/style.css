@@ -39,7 +39,13 @@ body {
     background-position: right 10px center;
 }
 
-.user, .navigation, .navigation-panel, .navigation-link, .icons-panel, .icon-link, .nav-link {
+.user,
+.navigation,
+.navigation-panel,
+.navigation-link,
+.icons-panel,
+.icon-link,
+.nav-link {
     display: flex;
     align-items: center;
 }
@@ -55,7 +61,8 @@ body {
     margin-left: 8px;
 }
 
-.user-name, .navigation-link {
+.user-name,
+.navigation-link {
     font-weight: 600;
     font-size: 14px;
     line-height: 22px;
@@ -67,7 +74,8 @@ body {
     margin-left: 12px;
 }
 
-.navigation-link::before, .icons-panel::before {
+.navigation-link::before,
+.icons-panel::before {
     content: '';
     width: 1px;
     height: 16px;
@@ -261,9 +269,15 @@ button.tag {
     border: none;
     display: flex;
     align-items: center;
-    padding: 8px 12px;
+    min-height: 40px;
     margin-right: 8px;
     font-weight: 600;
+    padding: 8px 12px;
+}
+
+button.tag:active {
+    padding-left: 13px;
+    padding-right: 11px;
 }
 
 .post {
@@ -338,7 +352,6 @@ button.tag {
     text-decoration: none;
 }
 
-
 .post-image {
     border: 1px solid #BFBFBF;
     border-radius: 4px;
@@ -361,6 +374,27 @@ button.tag {
 }
 
 .post-button {
+    display: flex;
+    align-items: center;
     background-color: #fff;
     border: none;
+}
+
+.post-footer {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #E8E8E8;
+    padding-top: 16px;
+}
+
+.post-button-icon {
+    fill: #595959;
+}
+
+.post-button-text {
+    margin-left: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    color: #595959;
 }
