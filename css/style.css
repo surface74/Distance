@@ -45,7 +45,9 @@ body {
 .navigation-link,
 .icons-panel,
 .icon-link,
-.nav-link {
+.nav-link,
+.stories-header-buttons,
+.stories-link {
   display: flex;
   align-items: center;
 }
@@ -136,7 +138,6 @@ body {
 
 .menu-sidebar {
   width: 192px;
-  margin-right: 12px;
 }
 
 .menu-sidebar .user {
@@ -201,6 +202,8 @@ body {
 
 .main-feed {
   width: 588px;
+  margin-left: 12px;
+  margin-right: 24px;
 }
 
 .create-post {
@@ -388,10 +391,6 @@ button.tag:active {
   padding-top: 16px;
 }
 
-.post-button-icon {
-  fill: #595959;
-}
-
 .post-button-text {
   margin-left: 8px;
   font-weight: 600;
@@ -399,3 +398,57 @@ button.tag:active {
   line-height: 22px;
   color: #595959;
 }
+
+.right-sidebar {
+  background: #ffffff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  width: 384px;
+}
+
+.stories-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 16px;
+  margin-left: 24px;
+}
+
+.stories-header-title {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  color: #262626;
+}
+
+.stories-link {
+  text-decoration: none;
+}
+
+.stories-archive-icon {
+  fill: #0050b3;
+}
+
+.stories-archive-text,
+.stories-setting-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #0050b3;
+}
+
+.stories-archive-text {
+    margin-left: 4px;
+}
+
+.stories-archive-text::after {
+    content: "";
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    width: 4px;
+    height: 4px;
+    margin-left: 8px;
+    margin-right: 8px;
+    background: #8c8c8c;
+  }
