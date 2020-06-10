@@ -145,8 +145,9 @@
                     <h4 class="create-post-title">Create post</h4>
                 </div>
                 <div class="create-post-body">
-                    <img src="img/avatar.png" alt="avatar"  width="40px" height="40px" class="user-avatar">
-                    <div class="create-post-input" contenteditable="true" placeholder="What`s on your mind, Alex?">
+                    <img src="img/avatar.png" alt="avatar" width="40px" height="40px" class="user-avatar">
+                    <div onblur="if (!this.textContent) this.innerHTML='';" class="create-post-input"
+                        contenteditable="true" placeholder="What`s on your mind, Alex?">
                     </div>
                 </div>
                 <div class="create-post-footer">
