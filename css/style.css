@@ -397,6 +397,7 @@ button.tag:active {
   align-items: center;
   background-color: #fff;
   border: none;
+  padding: 0;
 }
 
 .post-footer {
@@ -474,7 +475,7 @@ button.tag:active {
 }
 
 .story-item,
-.story-item-add {
+.story-item-grey {
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -482,7 +483,7 @@ button.tag:active {
 }
 
 .story-image,
-.story-image-add {
+.story-image-grey {
   display: flex;
   flex-shrink: 0;
   width: 48px;
@@ -498,7 +499,7 @@ button.tag:active {
   border: 3px solid #1890ff;
 }
 
-.story-image-add {
+.story-image-grey {
   background: #f5f5f5;
   border: 1px solid #d9d9d9;
 }
@@ -538,6 +539,7 @@ button.tag:active {
   line-height: 22px;
   color: #0050b3;
 }
+
 .bday {
   display: flex;
   align-items: center;
@@ -561,3 +563,68 @@ button.tag:active {
   color: #0050b3;
   text-decoration: none;
 }
+
+.fanpage {
+  border: 1px solid transparent;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background: #ffffff;
+  padding-top: 8px;
+  margin-bottom: 16px;
+}
+
+.fanpage-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.fanpage-title {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  color: #595959;
+}
+
+.fanpage-stats {
+  display: flex;
+  border-bottom: 1px solid #d9d9d9;
+  margin: 16px;
+}
+
+.stats-item {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin-bottom: 16px;
+  margin-right: 12px;
+}
+
+.stats-image {
+  display: flex;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  overflow: hidden;
+  border-radius: 50%;
+  object-fit: contain;
+  justify-content: center;
+  background: #f5f5f5;
+  border: 1px solid #d9d9d9;
+}
+
+.stats-title {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  color: #0050b3;
+}
+
+.stats-message-icon {
+  fill: #595959;
+}
+
