@@ -1,5 +1,5 @@
 .RB {
-  border: 1px solid red;
+  border: 1px solid red !important;
 }
 
 @import url("../fonts/SFProDisplay/stylesheet.css");
@@ -47,7 +47,6 @@ body {
 .navigation-link,
 .icons-panel,
 .icon-link,
-.nav-link,
 .stories-header-buttons,
 .stories-link {
   display: flex;
@@ -174,17 +173,30 @@ body {
 
 .nav-icon-dropdown {
   fill: #bfbfbf;
-  margin-right: 8px;
 }
 
 .nav-link {
+  display: flex;
+  align-items: center;
   padding: 4px 8px;
   text-decoration: none;
   border-radius: 4px;
+  color: #1890ff;
 }
 
-.nav-link .nav-text-dropdown {
+.nav-link-dropdown {
+  display: flex;
+  align-items: center;
+  padding: 4px 8px;
+  text-decoration: none;
+}
+
+.nav-text-dropdown {
   color: #1890ff;
+  margin-left: 8px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
 }
 
 .nav-link.active {
@@ -407,9 +419,12 @@ button.tag:active {
 }
 
 .stories {
+  border: 1px solid transparent;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   background: #ffffff;
+  padding: 16px;
+  padding-left: 24px;
   margin-bottom: 16px;
 }
 
@@ -417,8 +432,7 @@ button.tag:active {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 16px;
-  margin-left: 24px;
+  margin-bottom: 16px;
 }
 
 .stories-header-title {
@@ -464,20 +478,29 @@ button.tag:active {
   display: flex;
   align-items: center;
   text-decoration: none;
-  margin-left: 24px;
   margin-bottom: 16px;
 }
 
-.story-image-block {
+.story-image,
+.story-image-add {
   display: flex;
   flex-shrink: 0;
   width: 48px;
   height: 48px;
   overflow: hidden;
-  background: #F5F5F5;
-  border: 1px solid #D9D9D9;
   border-radius: 50%;
-  object-fit: cover;
+  object-fit: contain;
+  justify-content: center;
+}
+
+.story-image {
+  background: none;
+  border: 3px solid #1890ff;
+}
+
+.story-image-add {
+  background: #f5f5f5;
+  border: 1px solid #d9d9d9;
 }
 
 .story-item-block {
@@ -500,4 +523,41 @@ button.tag:active {
   font-size: 14px;
   line-height: 22px;
   color: #8c8c8c;
+}
+
+.stories-link-dropdown {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.stories-text-dropdown {
+  margin-left: 8px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #0050b3;
+}
+.bday {
+  display: flex;
+  align-items: center;
+  border: 1px solid transparent;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background: #ffffff;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.bday-text {
+  margin-left: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  color: #595959;
+}
+
+.bday-text a {
+  color: #0050b3;
+  text-decoration: none;
 }
