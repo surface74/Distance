@@ -14,8 +14,7 @@ body {
 }
 
 .header {
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding: 6px 0;
   background: #0050b3;
 }
 
@@ -87,8 +86,7 @@ body {
 }
 
 .navigation-panel {
-  padding-left: 12px;
-  padding-right: 12px;
+  padding: 0 12px;
 }
 
 .icon-link {
@@ -156,8 +154,7 @@ body {
 .nav-group {
   display: flex;
   flex-direction: column;
-  margin-top: 12px;
-  margin-bottom: 24px;
+  margin: 12px 0 24px;
 }
 
 .nav-icon {
@@ -210,15 +207,12 @@ body {
   font-size: 12px;
   line-height: 20px;
   color: #262626;
-  margin-top: 0;
-  margin-left: 10px;
-  margin-bottom: 4px;
+  margin: 0 0 4px 10px;
 }
 
 .main-feed {
   width: 588px;
-  margin-left: 12px;
-  margin-right: 24px;
+  margin: 0 24px 0 12px;
 }
 
 .create-post {
@@ -244,17 +238,12 @@ body {
 .create-post-body {
   display: flex;
   align-items: flex-start;
-  padding-top: 16px;
-  padding-right: 16px;
+  padding: 16px;
   padding-bottom: 24px;
-  padding-left: 16px;
 }
 
 .create-post-input {
-  padding-top: 6px;
-  padding-bottom: 4px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 6px 10px 4px;
   margin-left: 8px;
   width: 516px;
   min-height: 30px;
@@ -275,10 +264,8 @@ body {
 .create-post-footer {
   width: 556px;
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  margin: 0 auto;
+  padding: 16px 0;
   border-top: 1px solid #e8e8e8;
 }
 button {
@@ -339,8 +326,7 @@ button.tag {
   border-radius: 50%;
   width: 4px;
   height: 4px;
-  margin-left: 6px;
-  margin-right: 6px;
+  margin: 0 6px;
   background: #8c8c8c;
 }
 
@@ -356,8 +342,7 @@ button.tag {
 }
 
 .post-text {
-  margin-top: 16px;
-  margin-bottom: 16px;
+  margin: 16px 0;
   font-weight: normal;
   font-size: 14px;
   line-height: 22px;
@@ -376,8 +361,7 @@ button.tag {
 }
 
 .likes {
-  margin-top: 9px;
-  margin-bottom: 9px;
+  margin: 9px 0;
   display: flex;
   align-items: center;
 }
@@ -563,6 +547,8 @@ button.tag {
 }
 
 .fanpage {
+  display: flex;
+  flex-direction: column;
   border: 1px solid transparent;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -575,9 +561,7 @@ button.tag {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-bottom: 9px;
+  padding: 0 16px 9px;
   border-bottom: 1px solid #d9d9d9;
 }
 
@@ -592,6 +576,7 @@ button.tag {
   display: flex;
   border-bottom: 1px solid #d9d9d9;
   margin: 16px;
+  padding-bottom: 23px;
 }
 
 .stats-item {
@@ -627,7 +612,8 @@ button.tag {
   color: #0050b3;
 }
 
-.stats-message {
+.stats-message,
+.stats-notify {
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -637,15 +623,17 @@ button.tag {
   color: #8c8c8c;
 }
 
-.stats-message-icon {
+.stats-icon {
   fill: #595959;
 }
 
-.stats-message-title {
+.stats-message-title,
+.stats-notify-title {
   margin-left: 4px;
 }
 
-.stats-message-counter {
+.stats-message-counter,
+.stats-notify-counter {
   min-height: 22px;
   min-width: 17px;
   border: 1px solid #dfdfdf;
@@ -662,4 +650,21 @@ button.tag {
 
 .stats-message-counter:empty {
   display: none;
+}
+
+.fanpage-buttons {
+  margin: 0 auto;
+}
+
+.radio {
+  width: 117px;
+  height: 40px;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  color: #595959;
 }
