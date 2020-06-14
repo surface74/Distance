@@ -654,17 +654,56 @@ button.tag {
 
 .fanpage-buttons {
   margin: 0 auto;
+  display: flex;
+  width: 352px;
 }
 
 .radio {
-  width: 117px;
+  width: 100%;
   height: 40px;
   background: #ffffff;
   border: 1px solid #d9d9d9;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  align-items: center;
-  text-align: center;
   color: #595959;
+  z-index: 1;
+}
+
+.radio:last-child {
+  border-radius: 0 5px 5px 0;
+}
+
+.radio:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+.radio:not(:first-child) {
+  margin-left: -1px;
+}
+
+.radio.active {
+  border: 1px solid #1890ff;
+  z-index: 2;
+}
+
+.fanpage-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 16px auto;
+}
+
+.fanpage-counter {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  color: #262626;
+}
+
+.fanpage-week-counter {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #8c8c8c;
 }
