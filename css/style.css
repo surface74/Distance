@@ -11,11 +11,16 @@
 body {
   font-family: "SF Pro Display", sans-serif;
   background: #f5f5f5;
+  padding-top: 46px;
 }
 
 .header {
   padding: 6px 0;
   background: #0050b3;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
 }
 
 .header-block {
@@ -127,8 +132,6 @@ body {
   fill: white;
 }
 
-
-
 .icon-link:last-child::before {
   content: "";
   align-items: center;
@@ -143,12 +146,13 @@ body {
   margin: auto;
   margin-top: 16px;
   display: flex;
+  justify-content: space-between;
 }
 
 .menu-sidebar {
-  /* width: 192px; */
-  width: 16%;
-  max-width: 192px;
+  width: 192px;
+  /* width: 16%;
+  max-width: 192px; */
   margin-bottom: 16px;
 }
 
@@ -223,10 +227,8 @@ body {
 }
 
 .main-feed {
-  /* width: 588px; */
   width: 49%;
   max-width: 588px;
-  margin: 0 2% 0 1%;
 }
 
 .create-post {
@@ -478,6 +480,7 @@ button.tag {
   align-items: center;
   text-decoration: none;
   margin-bottom: 16px;
+  overflow: hidden;
 }
 
 .story-image,
@@ -522,11 +525,7 @@ button.tag {
   font-size: 14px;
   line-height: 22px;
   color: #8c8c8c;
-
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 290px;
 }
 
 .stories-link-dropdown {
@@ -727,4 +726,47 @@ button.tag {
   font-size: 14px;
   line-height: 22px;
   color: #8c8c8c;
+}
+
+@media (max-width: 1200px) {
+  .header-block {
+    width: 95%;
+  }
+
+  .right-sidebar {
+    display: none;
+  }
+
+  .container {
+    width: 95%;
+    justify-content: center;
+  }
+
+  .main-feed {
+    width: 100%;
+    margin-left: 16px;
+  }
+}
+
+@media (max-width: 960px) {
+  .header .user {
+    display: none;
+  }
+}
+
+@media (max-width: 820px) {
+  .header .navigation-link {
+    display: none;
+  }
+
+  .menu-sidebar {
+    position: fixed;
+    left: 0;
+    top: 46px;
+    width: 100%;
+    max-width: 192px;
+    background-color: #75f300;
+    height: 100%;
+    padding-left: 2%;
+  }
 }
