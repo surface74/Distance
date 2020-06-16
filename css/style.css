@@ -111,6 +111,14 @@ body {
   left: 12px;
 }
 
+.notification:empty {
+  display: none;
+}
+
+.notification:hover + .header-icon {
+  fill: white;
+}
+
 .header-icon {
   fill: #002766;
 }
@@ -118,6 +126,8 @@ body {
 .header-icon:hover {
   fill: white;
 }
+
+
 
 .icon-link:last-child::before {
   content: "";
@@ -136,7 +146,9 @@ body {
 }
 
 .menu-sidebar {
-  width: 192px;
+  /* width: 192px; */
+  width: 16%;
+  max-width: 192px;
   margin-bottom: 16px;
 }
 
@@ -211,8 +223,10 @@ body {
 }
 
 .main-feed {
-  width: 588px;
-  margin: 0 24px 0 12px;
+  /* width: 588px; */
+  width: 49%;
+  max-width: 588px;
+  margin: 0 2% 0 1%;
 }
 
 .create-post {
@@ -357,6 +371,7 @@ button.tag {
 .post-image {
   border: 1px solid #bfbfbf;
   border-radius: 4px;
+  width: 100%;
   max-width: 100%;
 }
 
@@ -398,7 +413,8 @@ button.tag {
 }
 
 .right-sidebar {
-  width: 384px;
+  width: 32%;
+  max-width: 384px;
 }
 
 .stories {
@@ -506,6 +522,11 @@ button.tag {
   font-size: 14px;
   line-height: 22px;
   color: #8c8c8c;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 290px;
 }
 
 .stories-link-dropdown {
@@ -653,9 +674,9 @@ button.tag {
 }
 
 .fanpage-buttons {
-  margin: 0 auto;
+  margin: 0 16px;
   display: flex;
-  width: 352px;
+  /* width: 352px; */
 }
 
 .radio {
