@@ -12,6 +12,11 @@
 <body>
     <header class="header">
         <div class="header-block">
+            <button class="mobile-menu">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
             <div class="search">
                 <input type="text" class="search-input" placeholder="Search">
             </div>
@@ -147,8 +152,7 @@
                 </div>
                 <div class="create-post-body">
                     <img src="img/avatar.png" alt="avatar" width="40px" height="40px" class="user-avatar">
-                    <div onblur="if (!this.textContent) this.innerHTML='';" class="create-post-input"
-                        contenteditable="true" placeholder="What`s on your mind, Alex?">
+                    <div class="create-post-input" contenteditable="true" placeholder="What`s on your mind, Alex?">
                     </div>
                 </div>
                 <div class="create-post-footer">
@@ -351,7 +355,8 @@
         </div>
         <!-- /.right-sidebar -->
     </div>
-    <script>document.querySelector('.create-post-input').innerHTML = '';</script>
+    <script src="js/script.js"></script>
 </body>
+
 
 </html>
