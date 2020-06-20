@@ -169,8 +169,6 @@ body {
 
 .menu-sidebar {
   width: 192px;
-  /* width: 16%;
-  max-width: 192px; */
   margin-bottom: 16px;
 }
 
@@ -272,14 +270,14 @@ body {
 .create-post-body {
   display: flex;
   align-items: flex-start;
-  padding: 16px;
-  padding-bottom: 24px;
+  margin: 16px;
+  margin-bottom: 24px;
 }
 
 .create-post-input {
   padding: 6px 10px 4px;
   margin-left: 8px;
-  width: 516px;
+  flex: 1 1 auto;
   min-height: 30px;
   max-height: 600px;
   word-wrap: anywhere;
@@ -296,9 +294,9 @@ body {
 }
 
 .create-post-footer {
-  width: 556px;
   display: flex;
-  margin: 0 auto;
+  flex-wrap: wrap;
+  margin: 0 16px;
   padding: 16px 0;
   border-top: 1px solid #e8e8e8;
 }
@@ -693,11 +691,10 @@ button.tag {
 .fanpage-buttons {
   margin: 0 16px;
   display: flex;
-  /* width: 352px; */
 }
 
 .radio {
-  width: 100%;
+  flex: 1;
   height: 40px;
   background: #ffffff;
   border: 1px solid #d9d9d9;
@@ -783,7 +780,7 @@ button.tag {
     top: 62px;
     width: 100%;
     max-width: 192px;
-    background-color: #f1f1f1;
+    background-color: #f1f1f1d1;
     height: 100%;
     padding-left: 2%;
     transform: translateX(-100%);
@@ -801,6 +798,20 @@ button.tag {
 
 @media (max-width: 660px) {
   .search {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .create-post-footer {
+    justify-content: space-around;
+  }
+  .create-post-footer .tag {
+    margin-right: 0;
+    justify-content: center;
+    min-width: 68px;
+  }
+  .create-post-footer .nav-text {
     display: none;
   }
 }
